@@ -1,0 +1,12 @@
+
+services:
+  - type: web
+    name: toey-stock-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: LINE_CHANNEL_ACCESS_TOKEN
+        value: IIB3NmGfvWRwPHXM6C/efwAMFJoEOQ75pp5jn7eShQ69alsOcP74I1F/bN9bp2gIlvZpPatQW2J+I2txuaBQIPzWmi2tB3PBXhTITZZ4uGlc8g1swCvnkiMMVPDobMlmVQxTJ5z3YxwZLEhv23WTGAdB04t89/1O/w1cDnyilFU=
+      - key: LINE_CHANNEL_SECRET
+        value: 8c2dddcb95a8871124279cabc971b5ce
