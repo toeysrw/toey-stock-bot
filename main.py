@@ -72,4 +72,7 @@ def get_stock_message(ticker):
         return TextSendMessage(text=f"เกิดข้อผิดพลาดในการดึงข้อมูลหุ้น {ticker}\n{str(e)}")
 
 if __name__ == "__main__":
-    app.run()
+    import os
+port = int(os.environ.get("PORT", 8000))
+app.run(host="0.0.0.0", port=port)
+
